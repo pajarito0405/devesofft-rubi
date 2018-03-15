@@ -1,0 +1,861 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SmartOn HTML Template Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Documentation extras -->
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/prettify.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">SmartOn</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Documentation</a></li>
+                <li><a target="_blank" href="http://4grafx.ticksy.com/">Support</a></li>
+                <li><a target="_blank" href="http://fourgrafx.com/smarton_html/">Demo</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="bs-header" id="content">
+    <div class="container">
+        <h1>SmartOn Documentation</h1>
+
+        <p style="opacity:.66;">An overview of the SmartOn HTML Theme, Documentation of the HTML, CSS, jQuery, how to
+            use, basic skills, examples, and more.</p>
+    </div>
+</div>
+
+<div class="bs-old-docs">
+    <div class="container">
+        <strong><a target="_blank" href="http://4grafx.ticksy.com/">Got any Questions?</a></strong> So please use our
+        Support Forum and don't use the comment Section on Themeforest
+    </div>
+</div>
+
+<div class="container bs-docs-container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="bs-sidebar hidden-print" role="complementary">
+                <ul class="nav bs-sidenav">
+
+                    <!-- ======================== SIDEBAR NAVIGATION ======================== -->
+
+                    <li class="active"><a href="#tips">Tips</a></li>
+                    <li><a href="#file-structure">File Structure</a></li>
+                    <li><a href="#html-structure">HTML Structure</a></li>
+                    <li><a href="#css-structure">CSS Structure</a></li>
+                    <li><a href="#javascript-structure">Javascript Structure</a></li>
+
+                    <li>
+                        <a href="#main-styles">Customization and Styles</a>
+                        <ul class="nav">
+                            <li><a href="#main-general">General</a></li>
+                            <li><a href="#main-layout">Layout</a></li>
+                            <li><a href="#main-headers">Headers</a></li>
+                            <li><a href="#main-footers">Footers</a></li>
+                            <li><a href="#main-menus">Menus</a></li>
+                            <li><a href="#main-inner-headers">Inner Headers</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#main-features">Main Features</a>
+                        <ul class="nav">
+                            <li><a href="#icons">Icons</a></li>
+                            <li><a href="#sliders">Sliders</a></li>
+                            <li><a href="#lightbox">Lightbox</a></li>
+                            <li><a href="#filtering">Filtering</a></li>
+                            <li><a href="#animations">Animations</a></li>
+                            <li><a href="#maps">Maps</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#pages">Pages</a></li>
+                    <li><a href="#contact-form">Contact Form</a></li>
+                    <li><a href="#twitter">Twitter</a></li>
+                    <li><a href="#source-and-credits">Source and Credits</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9" role="main">
+
+
+            <!-- ======================== TIPS ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="tips">Tips</h1></div>
+
+                <p class="lead">Some very useful Tips how to work better with the Theme, please read!</p>
+
+                <div class="alert alert-info"><i class="fa fa-warning fa-lg"></i> Maybe many of the questions are
+                    already answered in the <a href="http://4grafx.ticksy.com" target="_blank">open Ticket System</a> or
+                    in the <a href="http://4grafx.ticksy.com/faqs" target="_blank">FAQ's</a></div>
+                <div class="alert alert-info"><i class="fa fa-warning fa-lg"></i> Do not start from scratch, use an
+                    existing page from the demo files and modify it to learn how the Theme works
+                </div>
+                <div class="alert alert-info"><i class="fa fa-warning fa-lg"></i> Explore the live demo for page ideas
+                    and sample code
+                </div>
+                <div class="alert alert-success"><i class="fa fa-warning fa-lg"></i> Use Firebug or Chrome Developer
+                    Tools to detect Classes and Javascript Conflicts
+                </div>
+
+            </div>
+
+            <!-- ======================== FILE STRUCTURE ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="file-structure">File Structure of the Theme</h1></div>
+
+                <p class="lead">Within the download you'll find the following directories and files.</p>
+
+                <div class="highlight">
+<pre>
+<code>
+    HTML
+    │
+    ├─ <i class="fa fa-folder-open fa-fw"></i> contact
+    │
+    ├─ <i class="fa fa-folder-open fa-fw"></i> css
+    │ │
+    │ ├── <i class="fa fa-folder-open fa-fw"></i> themecss
+    │ │
+    │ └── <i class="fa fa-folder-open fa-fw"></i> colors
+    │
+    ├─ <i class="fa fa-folder-open fa-fw"></i> fonts
+    │
+    ├─ <i class="fa fa-folder-open fa-fw"></i> ico
+    │
+    ├─ <i class="fa fa-folder-open fa-fw"></i> img
+    │ │
+    │ ├─ <i class="fa fa-folder-open fa-fw"></i> demo
+    │ │
+    │ └─ <i class="fa fa-folder-open fa-fw"></i> theme
+    │
+    ├─ <i class="fa fa-folder-open fa-fw"></i> js
+    │ │
+    │ ├─ <i class="fa fa-folder-open fa-fw"></i> revolutionjs
+    │ │
+    │ └─ <i class="fa fa-folder-open fa-fw"></i> themejs
+    │
+    ├─ <i class="fa fa-file fa-fw"></i> index.html
+    │
+    ├─ <i class="fa fa-file fa-fw"></i> portfolio.html
+    │
+    └─ <i class="fa fa-file fa-fw"></i> other-files.html
+
+</code>
+</pre>
+                </div>
+
+            </div>
+
+            <!-- ======================== HTML STRUCTURE ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="html-structure">HTML Structure</h1></div>
+                <p class="lead">The template is based on <strong>Bootstrap 3</strong> Framework - <a target="_blnak"
+                                                                                                     href="http://getbootstrap.com">http://getbootstrap.com</a>
+                </p>
+					
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-12&quot;&gt;
+        Level 1 column
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-6&quot;&gt;Level 2&lt;/div&gt;
+            &lt;div class=&quot;col-md-6&quot;&gt;Level 2&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <div class="alert alert-info"><i class="fa fa-warning fa-lg"></i> <b>Please note:</b> You can use all
+                    Classes and Scripts from Bootstrap 3, they will all work! Not only the grid!
+                </div>
+                <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12
+                    columns as the device or viewport size increases. If you need more information about the Main Grid,
+                    please visit this site: <a target="_blank" href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a>
+                </p>
+
+            </div>
+
+            <!-- ======================== CSS STRUCTURE ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="css-structure">CSS Structure</h1></div>
+                <p class="lead">The organization of the CSS is one of our priorities. These are the CSS file we're using
+                    in the template.</p>
+
+                <h3>Content of the Folder css</h3>
+
+                <p>Please note: all of these files below are <b>required</b> and always needed.</p>
+
+                <div class="highlight">
+<pre>
+<code>
+    <i class="fa fa-file fa-fw"></i> bootstrap.css
+    This is the Main CSS File from Bootstrap3, uncompressed
+
+    <i class="fa fa-file fa-fw"></i> bootstrap.min.css
+    This is the Main CSS File from Bootstrap3, compressed
+
+    <i class="fa fa-file fa-fw"></i> smarton.css
+    This is the Main CSS File for the SmartOn Theme with all necessary Styles and Overrides
+
+    <i class="fa fa-folder-open fa-fw"></i> colors
+    Here you'll find the CSS Files for the different Colors of the Theme
+
+    <i class="fa fa-folder-open fa-fw"></i> themecss
+    Here you'll find the CSS Files for Sliders, Lightbox, Portfolio ...
+
+</code>
+</pre>
+                </div>
+
+                <h3>Content of the Folder themecss</h3>
+
+                <p>Please note: all of these files below are optional and not needed if you decide to drop one of these
+                    Features.</p>
+
+                <div class="highlight">
+<pre>
+<code>
+    <i class="fa fa-file fa-fw"></i> animate.css
+    CSS File for the Animations when a Element comes in Viewport
+
+    <i class="fa fa-file fa-fw"></i> flexslider.css
+    CSS File for the Slideshow Flexslider (the simple Slideshow)
+
+    <i class="fa fa-file fa-fw"></i> lightbox.css
+    CSS File for the Lightbox (Magnific Popup)
+
+    <i class="fa fa-file fa-fw"></i> portfolio.css
+    CSS File for the Portfolio (Isotope Portfolio)
+
+    <i class="fa fa-file fa-fw"></i> revolution-slider.css
+    CSS File for the Revolution Slider (complex and powerful Slideshow)
+
+</code>
+</pre>
+                </div>
+
+                <div class="alert alert-success"><i class="fa fa-thumbs-up fa-lg"></i> Use Firebug or Chrome Developer
+                    Tools to detect the CSS Classes
+                </div>
+
+            </div>
+
+            <!-- ======================== JAVASCRIPT STRUCTURE ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="javascript-structure">Javascript Structure</h1></div>
+                <p class="lead">jQuery - is a Javascript library that greatly reduces the amount of code that you must
+                    write. For more information, please visit <a target="_blank" href="http://www.jquery.com/">jQuery.com</a>.
+                </p>
+
+                <p>The initialization of the elements, libs and features is made by the file <span
+                        class="label label-warning">application.js</span>, in the JS folder.</p>
+
+                <h3>Content of the Folder js</h3>
+
+                <p>Please note: one of these files below (bootstrap or bootstrap.min.js) are <b>required</b> and always
+                    needed.</p>
+
+                <div class="highlight">
+<pre>
+<code>
+    <i class="fa fa-file fa-fw"></i> bootstrap.js
+    This is the Main jQuery File from Bootstrap3, uncompressed
+
+    <i class="fa fa-file fa-fw"></i> bootstrap.min.js
+    This is the Main jQuery File from Bootstrap3, compressed
+
+    <i class="fa fa-folder-open fa-fw"></i> revolutionjs
+    Here you'll find the jQuery Files for the Slider Revolution
+
+    <i class="fa fa-folder-open fa-fw"></i> themejs
+    Here you'll find the jQuery Files for Sliders, Lightbox, Portfolio ...
+
+</code>
+</pre>
+                </div>
+
+                <h3>Content of the Folder themejs</h3>
+
+                <p>Please note: most of these files below are optional and not needed if you decide to drop one of these
+                    Features.</p>
+
+                <div class="highlight">
+<pre>
+<code>
+    <i class="fa fa-file fa-fw"></i> application.js
+    VERY IMPORTANT: all jQuery Plugins are initialised within this File!
+
+    <i class="fa fa-file fa-fw"></i> jquery.carouFredSel-6.2.1
+    jQuery File for the Carousels
+
+    <i class="fa fa-file fa-fw"></i> jquery.easypiechart.js
+    jQuery File for the Easy Pie Canvas Chart
+
+    <i class="fa fa-file fa-fw"></i> jquery.isotope.min.js
+    jQuery File for the Portfolio Function
+
+    <i class="fa fa-file fa-fw"></i> jquery.lightbox.min.js
+    jQuery File for the Magnific Lightbox
+
+    <i class="fa fa-file fa-fw"></i> jquery.montage.js
+    jQuery File for the dynamic Image Grid
+
+    <i class="fa fa-file fa-fw"></i> jquery.nouislider.min.js
+    jQuery File for the Range Slider of the Shop Pages
+
+    <i class="fa fa-file fa-fw"></i> jquery.smartmenus.js
+    VERY IMPORTANT: this is the jQuery for the Main Menu
+
+    <i class="fa fa-file fa-fw"></i> jquery.stellar.js
+    jQuery File for the Parallax Effect
+
+    <i class="fa fa-file fa-fw"></i> jquery.tooltipster.js
+    jQuery File for the Tooltips (not default Bootstrap)
+
+    <i class="fa fa-file fa-fw"></i> jquery.validate.min.js
+    jQuery File for the Validation of the Forms
+
+    <i class="fa fa-file fa-fw"></i> jquery.waypoints.min.js
+    jQuery File for the Animation when a Element comes in Viewport
+
+    <i class="fa fa-file fa-fw"></i> TimeCircles.js
+    jQuery File for the Counter at the coming soon Page
+
+    <i class="fa fa-file fa-fw"></i> tweetie.js
+    jQuery File for the working Twitter Feed
+
+
+</code>
+</pre>
+                </div>
+
+                <div class="alert alert-success"><i class="fa fa-thumbs-up fa-lg"></i> Use Firebug or Chrome Developer
+                    Tools to detect jQuery Errors
+                </div>
+
+            </div>
+
+
+            <!-- ======================== MAIN GENERAL - GENERAL ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="main-styles">Customization and Styles</h1></div>
+                <div class="page-header"><h1 id="main-general">General</h1></div>
+                <p class="lead">This Theme has various Style options for different Kinds of Layouts.</p>
+
+                <h3>Colors</h3>
+
+                <p>All the Colors can be changed in the CSS File <span
+                        class="label label-warning">color-default.css</span>. Or include one of our predefined
+                    Stylesheets into the Head Section of the Theme.</p>
+
+                <hr/>
+
+                <h3>Fonts</h3>
+
+                <p>To use another Font, please choose your new Font at the <a href="http://www.google.com/fonts"
+                                                                              target="_blank">Google Font Site</a>,
+                    include the given Style Tag inside the Head Section of the Theme and add the CSS Markup to <span
+                            class="label label-warning">smarton.css</span>.</p>
+
+                <p>In the default Theme we have used this Code for example:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'&gt;
+</pre>
+
+            </div>
+
+            <!-- ======================== MAIN LAYOUT ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="main-layout">Layout</h1></div>
+                <p class="lead">The Main Layout of the Theme can easily be changed by adding or removing one CSS Class
+                    to the Body.</p>
+
+                <p>Use this for the <b>Wide Version</b>:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;body&gt;
+  &lt;div class="page-wrapper"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/body&gt;
+</pre>
+
+                <p>Use this for the <b>Boxed Version</b>:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;body&gt;
+  &lt;div class="page-wrapper boxed"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/body&gt;
+</pre>
+
+                <div class="page-header">
+                    <h1>Backgrounds
+                        <small>(for boxed Version only)</small>
+                    </h1>
+                </div>
+                <p class="lead">You can define the Background for the Boxed Version by adding a class to the Body.</p>
+
+                <p>Available Classes for the Body are <span class="label label-default">bg-pattern1</span> - <span
+                        class="label label-default">bg-pattern20</span>.</p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;body class="bg-pattern1"&gt;
+  ...
+&lt;/body&gt;
+</pre>
+
+
+            </div>
+
+            <!-- ======================== MAIN HEADER ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="main-headers">Headers</h1></div>
+                <p class="lead">SmartOn is providing 6 types of top pages headers that can be combine how you think will
+                    be better for you.</p>
+
+                <p>Check the demo to see the headers in action. Simply add one of the following classes to your <span
+                        class="label label-warning">.header-wrapper</span>: <span class="label label-default">.light-top-header</span>,
+                    <span class="label label-default">.center-top-header</span>. Using this 2 classes and the default
+                    boostrap classes we can have the headers in diffrent styles (see demo).</p>
+					<pre class="prettyprint lang-html linenums">
+&lt;div class="header-wrapper light-top-header center-top-header"&gt;
+...
+&lt;/div&gt;
+					</pre>
+
+            </div>
+
+            <!-- ======================== MAIN FOOTER ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="main-footers">Footers</h1></div>
+                <p class="lead">SmartOn is providing 5 types of footer pages that you can use as you wish.</p>
+
+                <p>The same rule as the header apply here but the difference is that here we don't have special classes
+                    for the footer. Just by using the Boostrap you can build your own footer. We made 5 types of footers
+                    for you so you can have a base to start.</p>
+
+            </div>
+
+            <!-- ======================== MAIN MENU ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="main-menus">Menus</h1></div>
+                <p class="lead">SmartOn is providing 6 types of menu. They can be combine and customized as you wish
+                    with over 20 different results.</p>
+
+                <p>The same as the headers we have special classes for the menu that need to be added to <span
+                        class="label label-warning">.header-bottom</span>. Use the following classes:<span
+                        class="label label-default">.menu-full-width</span>, <span
+                        class="label label-default">.menu-tab</span>, <span
+                        class="label label-default">.menu-radius</span>, <span class="label label-default">.menu-separator</span>.
+                    You can combine this classes to build other styles of the menu. Also you can add icons the the menu
+                    using fontawesome.</p>
+
+            </div>
+
+            <!-- ======================== MAIN INNER HEADERS ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="main-inner-headers">Inner Headers</h1></div>
+                <p class="lead">SmartOn is providing 5 types of inner pages headers that can be combine in over 25
+                    variations.</p>
+
+                <p>The inner header where we have the title page and the breadcrumbs can be styled using Boostrap
+                    classes and some special classes. You can add those classes to <span class="label label-warning">.page-header</span>.
+                    Check the demo to see what can you build.</p>
+
+            </div>
+
+
+            <!-- ======================== MAIN FEATURES - ICONS ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="main-features">Main Features</h1></div>
+                <div class="page-header"><h1 id="icons">Icons</h1></div>
+                <p class="lead">For many Elements we use the great <a href="http://fontawesome.io/" target="_blank">Font
+                    Awesome</a> which gives you scalable vector icons that can instantly be customized — size, color,
+                    drop shadow, and anything that can be done with the power of CSS.</p>
+
+                <p><a href="http://fontawesome.io/icons/" target="_blank" class="btn btn-default">See all Icons</a> <a
+                        href="#" class="btn btn-link">or</a> <a href="http://fontawesome.io/examples/" target="_blank"
+                                                                class="btn btn-default">See some examples in Code</a>
+                </p>
+                <hr/>
+                <p><a href="http://fontawesome.io/" target="_blank"><img class="img-responsive"
+                                                                         src="assets/img/icons.png"/></a></p>
+            </div>
+
+            <!-- ======================== SLIDER ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="sliders">Sliders</h1></div>
+                <p class="lead">We use two Main Sliders in this Theme, <a
+                        href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848"
+                        target="_blank">Revolution Slider jQuery Plugin</a> and the <a
+                        href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider 2 jQuery Plugin</a>.</p>
+                <hr/>
+                <h3>Revolution Slider</h3>
+
+                <p>Revolution Slider is our Main Slider with a lot of options to customize, it includes full Layer
+                    Support, Videos, Transitions and much much more. The Revolution Slider <b>must</b> be initialised in
+                    the jQuery File <span class="label label-warning">application.js</span>. To see the full
+                    Documentation of this awesome jQuery Slider, please look here:</p>
+
+                <p><a class="btn btn-default" href="01-revolutionslider/documentation.html" target="_blank">Documentation</a>
+                </p>
+                <hr/>
+                <h3>Flexslider 2</h3>
+
+                <p>Flexslider is the slider you'll find in the content. Flexslider is a simple slideshow script but with
+                    lots of options. The Flexslider <b>must</b> be initialised in the jQuery File <span
+                            class="label label-warning">application.js</span>. You can find more Documentation here:</p>
+
+                <p><a class="btn btn-default" href="http://www.woothemes.com/flexslider/"
+                      target="_blank">Documentation</a></p>
+            </div>
+
+            <!-- ======================== LIGHTBOX ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="lightbox">Lightbox</h1></div>
+                <p>The Lightbox which is integrated in the Theme runs with the <a
+                        href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Lightbox</a>, a
+                    awesome jQuery Plugin to handle different Media Types. The Lightbox is initialised in the <span
+                            class="label label-warning">application.js</span>. For more Informations please have a look
+                    at the Documentation:</p>
+
+                <p><a class="btn btn-default" href="http://dimsemenov.com/plugins/magnific-popup/documentation.html"
+                      target="_blank">Documentation</a></p>
+            </div>
+
+            <!-- ======================== FILTERING ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="filtering">Filtering</h1></div>
+                <p>The filter function is driven by the Isotope Script, a exquisite jQuery plugin for magical layouts.
+                    The Portfolio is initialised in the <span class="label label-warning">application.js</span>.To see
+                    the Documentation please see the Button below:</p>
+
+                <p><a class="btn btn-default" href="http://isotope.metafizzy.com" target="_blank">Documentation</a></p>
+            </div>
+
+
+            <!-- ======================== ANIMATION ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="animations">Animations</h1></div>
+                <p class="lead">For the Animation when a Element comes in the Viewport we use jQuery Waypoints in
+                    Combination with animate.css</p>
+
+                <p>For example add the class <span class="label label-default">animation</span> and the Animation Name
+                    (see the list below) to a Element to animate it when it comes into Viewport:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class="animation bounceIn"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+                <select class="form-control input-lg">
+                    <optgroup label="Attention Seekers">
+                        <option value="bounce">bounce</option>
+                        <option value="flash">flash</option>
+                        <option value="pulse">pulse</option>
+                        <option value="shake">shake</option>
+                        <option value="swing">swing</option>
+                        <option value="tada">tada</option>
+                        <option value="wobble">wobble</option>
+                    </optgroup>
+
+                    <optgroup label="Bouncing Entrances">
+                        <option value="bounceIn">bounceIn</option>
+                        <option value="bounceInDown">bounceInDown</option>
+                        <option value="bounceInLeft">bounceInLeft</option>
+                        <option value="bounceInRight">bounceInRight</option>
+                        <option value="bounceInUp">bounceInUp</option>
+                    </optgroup>
+
+                    <optgroup label="Bouncing Exits">
+                        <option value="bounceOut">bounceOut</option>
+                        <option value="bounceOutDown">bounceOutDown</option>
+                        <option value="bounceOutLeft">bounceOutLeft</option>
+                        <option value="bounceOutRight">bounceOutRight</option>
+                        <option value="bounceOutUp">bounceOutUp</option>
+                    </optgroup>
+
+                    <optgroup label="Fading Entrances">
+                        <option value="fadeIn">fadeIn</option>
+                        <option value="fadeInDown">fadeInDown</option>
+                        <option value="fadeInDownBig">fadeInDownBig</option>
+                        <option value="fadeInLeft">fadeInLeft</option>
+                        <option value="fadeInLeftBig">fadeInLeftBig</option>
+                        <option value="fadeInRight">fadeInRight</option>
+                        <option value="fadeInRightBig">fadeInRightBig</option>
+                        <option value="fadeInUp">fadeInUp</option>
+                        <option value="fadeInUpBig">fadeInUpBig</option>
+                    </optgroup>
+
+                    <optgroup label="Fading Exits">
+                        <option value="fadeOut">fadeOut</option>
+                        <option value="fadeOutDown">fadeOutDown</option>
+                        <option value="fadeOutDownBig">fadeOutDownBig</option>
+                        <option value="fadeOutLeft">fadeOutLeft</option>
+                        <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                        <option value="fadeOutRight">fadeOutRight</option>
+                        <option value="fadeOutRightBig">fadeOutRightBig</option>
+                        <option value="fadeOutUp">fadeOutUp</option>
+                        <option value="fadeOutUpBig">fadeOutUpBig</option>
+                    </optgroup>
+
+                    <optgroup label="Flippers">
+                        <option value="flip">flip</option>
+                        <option value="flipInX">flipInX</option>
+                        <option value="flipInY">flipInY</option>
+                        <option value="flipOutX">flipOutX</option>
+                        <option value="flipOutY">flipOutY</option>
+                    </optgroup>
+
+                    <optgroup label="Lightspeed">
+                        <option value="lightSpeedIn">lightSpeedIn</option>
+                        <option value="lightSpeedOut">lightSpeedOut</option>
+                    </optgroup>
+
+                    <optgroup label="Rotating Entrances">
+                        <option value="rotateIn">rotateIn</option>
+                        <option value="rotateInDownLeft">rotateInDownLeft</option>
+                        <option value="rotateInDownRight">rotateInDownRight</option>
+                        <option value="rotateInUpLeft">rotateInUpLeft</option>
+                        <option value="rotateInUpRight">rotateInUpRight</option>
+                    </optgroup>
+
+                    <optgroup label="Rotating Exits">
+                        <option value="rotateOut">rotateOut</option>
+                        <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+                        <option value="rotateOutDownRight">rotateOutDownRight</option>
+                        <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+                        <option value="rotateOutUpRight">rotateOutUpRight</option>
+                    </optgroup>
+
+                    <optgroup label="Sliders">
+                        <option value="slideInDown">slideInDown</option>
+                        <option value="slideInLeft">slideInLeft</option>
+                        <option value="slideInRight">slideInRight</option>
+                        <option value="slideOutLeft">slideOutLeft</option>
+                        <option value="slideOutRight">slideOutRight</option>
+                        <option value="slideOutUp">slideOutUp</option>
+                    </optgroup>
+
+                    <optgroup label="Specials">
+                        <option value="hinge">hinge</option>
+                        <option value="rollIn">rollIn</option>
+                        <option value="rollOut">rollOut</option>
+                    </optgroup>
+                </select>
+
+
+            </div>
+
+            <!-- ======================== MAP ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="maps">Maps</h1></div>
+                <p class="lead">All Maps in this Theme are driven by the free Service from Google, GoogleMaps.</p>
+
+                <p>To customize the maps simply open <span class="label label-warning">application.js</span> in the js
+                    folder and starting with the line 265 you can fiind the maps script. Change the coordinates of the
+                    map at line 271 and 281 with your own coordinates. Also change the coordinates at line 326 so the
+                    script can center the marker. To change the content of the pop up go to line 307. To edit the marker
+                    just replace the image in <span class="label label-default">img/theme/google-marker.png</span>.</p>
+            </div>
+
+
+            <!-- ======================== PAGES ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="pages">Pages</h1></div>
+                <p class="lead">We have added a lot of Sample Pages to give you some Inspiration how your Content maybe
+                    could look like. Please see the different HTML Pages.</p>
+            </div>
+
+            <!-- ======================== CONTACT FORM ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="contact-form">Contact Form</h1></div>
+                <p class="lead">We have added a working PHP Contact Form in our Theme.</p>
+
+                <p><span class="label label-danger">Important</span> You need to make sure your server supports PHP 5.0
+                    + otherwise the dynamic contact form will not work. Please note that if you deploy it locally, you
+                    will also need a local server to check the dynamic contact form.<br/>
+                    Open the file contact/process-form.php. Following is the screenshot of the values you need to adjust
+                </p>
+<pre class="prettyprint lang-html linenums">
+		require_once "class.phpmailer.php";
+		$mail = new PHPMailer();
+		$mail->IsMail();
+		$mail->IsHTML(true);    
+		$mail->CharSet  = "utf-8";
+		$mail->From     = $email;
+		$mail->FromName = $contactName;
+		$mail->WordWrap = 50;    
+		$mail->Subject  =  $contactName;
+		$mail->Body     =  "<strong>Full Name:</strong> " . $contactName. ".<br/>";
+		$mail->Body     .= "<strong>Message:</strong> " . $message. ".";
+		$mail->AddAddress('cosminiorgus@gmail.com');
+		$mail->AddReplyTo($email);
+</pre>
+                <p>Edit the e-mail address on line 62 and set your own one. This will be the address where the e-mails
+                    sent from contact form will come. You can also set multiple e-mails by separating them with
+                    commas.<br/>
+                    The subject for e-mail sent can also be set by modifying line 60.<br/>
+                    If you need more modifications, like changing the success/error messages, you should edit file
+                    contact/process-form.php as well as contact.php and change the values in corresponding places. Just
+                    browse through the abovementioned files to locate those fields. </p>
+            </div>
+
+            <!-- ======================== TWITTER ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="twitter">Twitter</h1></div>
+                <p class="lead">We have added a working Twitter Feed in our Theme, you'll need to register a App @
+                    Twitter.</p>
+
+                <p>We are using <a href="http://sonnyt.com/tweetie-plugin/">jQuery Tweetie - Simple Twitter Feed
+                    Plugin</a> to have twitter display on our theme.New Twitter API requires oAuth Token Key, so it’s
+                    three step process. Here are the steeps to make it work:</p>
+
+                <p>1. First, you need a consumer key and secret keys. Get one from dev.twitter.com/apps.</p>
+
+                <p>2. Edit js/themejs/api/config.php file and replace variables with your Consumer and oAuth Keys.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;?php
+    // Consumer Key
+    define('CONSUMER_KEY', 'CONSUMER_KEY_HERE');
+    define('CONSUMER_SECRET', 'CONSUMER_SECRET_HERE');
+
+    // User Access Token
+    define('ACCESS_TOKEN', 'ACCESS_TOKEN_HERE');
+    define('ACCESS_SECRET', 'ACCESS_SECRET_HERE');
+?&gt;
+</pre>
+            </div>
+
+            <!-- ======================== SOURCE AND CREDITS ======================== -->
+
+            <div class="bs-docs-section">
+                <div class="page-header"><h1 id="source-and-credits">Source and Credits</h1></div>
+                <p class="lead">We have used the following Recources and Scripts:</p>
+            </div>
+
+            <p><b>General</b></p>
+            <ul>
+                <li>Images - <a target="_blank" href="http://shutterstock.net/">http://shutterstock.net/</a></li>
+                <li>Google Fonts - <a target="_blank" href="http://www.google.com/webfonts">http://www.google.com/webfonts</a>
+                </li>
+                <li>Icons Font - <a target="_blank" href="http://fontawesome.io/">http://fontawesome.io/</a></li>
+            </ul>
+
+            <p><b>Scripts and CSS</b></p>
+            <ul>
+                <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+                <li>Bootstrap 3 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+                <li>Revolution Slider - <a target="_blank"
+                                           href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848</a>
+                </li>
+                <li>Isotope jQuery plugin - <a target="_blank" href="http://isotope.metafizzy.co">http://isotope.metafizzy.co</a>
+                </li>
+                <li>Magnific Popup - <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+                </li>
+                <li>jQuery Validate - <a target="_blank"
+                                         href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a>
+                </li>
+                <li>Stellar.js - <a target="_blank" href="http://markdalgleish.com/projects/stellar.js/">http://markdalgleish.com/projects/stellar.js/</a>
+                </li>
+                <li>Animate.css - <a target="_blank" href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
+                </li>
+                <li>CarouFredSel - <a target="_blank" href="https://github.com/gilbitron/carouFredSel">https://github.com/gilbitron/carouFredSel</a>
+                </li>
+                <li>FlexSlider2 - <a target="_blank" href="http://www.woothemes.com/flexslider/">http://www.woothemes.com/flexslider/</a>
+                </li>
+                <li>SmartMenus - <a target="_blank" href="http://www.smartmenus.org/">http://www.smartmenus.org/</a>
+                </li>
+                <li>Tooltipster - <a target="_blank" href="http://iamceege.github.io/tooltipster/">http://iamceege.github.io/tooltipster/</a>
+                </li>
+                <li>Waypoints - <a target="_blank" href="http://imakewebthings.com/jquery-waypoints/">http://imakewebthings.com/jquery-waypoints/</a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="bs-footer" role="contentinfo">
+        <div class="container">
+
+            <ul class="footer-links">
+                <li>Designed and built with Love by</li>
+                <li class="muted">&middot;</li>
+                <li><a href="http://www.fourgrafx.com">Fourgrafx</a></li>
+                <li class="muted">&middot;</li>
+                <li><a href="http://www.ws-theme.com">WS-Theme</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script src="assets/js/prettify.js"></script>
+
+</body>
+</html>

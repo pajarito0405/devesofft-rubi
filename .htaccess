@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond $1 !^(index\.php|assets|robots\.txt)
+    RewriteRule ^(.*)$ index.php/$1 [L]
+    
+    RewriteCond %{HTTP_HOST} ^(104.236.12.51)(:80)? [NC]
+    RewriteRule ^(.*) http://www.helloworldcenter.com/$1 [R=301,L]
+    
+    RewriteCond %{HTTP_HOST} ^(helloworldcenter\.com)(:80)? [NC]
+    RewriteRule ^(.*) http://www.helloworldcenter.com/$1 [R=301,L]
+</IfModule> 
+
