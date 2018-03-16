@@ -395,6 +395,7 @@
          console.log("data error_msg: "+ res.error_msg);
          if(res.error_msg != ""){ 
           // $("#errlog").html(res.error_msg);
+          $("#lista_boletos").html(res.error_msg);
           console.log("dio error aca : ");
          }else{
             console.log("datos : "+ res.datos.length);
