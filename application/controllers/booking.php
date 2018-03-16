@@ -58,12 +58,23 @@ class booking extends CI_Controller
     
     public function get_data_bus(){
         $item = $this->bus->get_item_bus();
-        // $id = $this->input->post('id');
         // $ofi = $this->ofi->get_by_id($id);
         $msg=''; 
        // $response = array('error_msg'=> $item);  
         $response = array('error_msg'=> $msg,'datos'=>$item);
         echo json_encode($response); 
+    }
+
+    public function get_data_detalle_bus(){
+        $id = $this->uri->segment(3);
+        $item["detalle_bus"] = $this->bus->get_item_detalle_bus($id);
+        $item["detalle_cooperativa"] = $this->bus->get_item_detalle_cooperativa($id);
+        
+        //$msg=''; 
+        //$response["detalle_bus"] = array('error_msg'=> $msg,'datos'=>$item);
+        //var_dump($response);
+        $this->load_view_booking("booking/detalle_rutas",$item);
+        //echo json_encode($response); 
     }
     
     

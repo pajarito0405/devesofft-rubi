@@ -286,7 +286,7 @@ $(".dia").click(function(){
 
 var glat = -3.2525627; 
 var glng = -79.9540662; 
- function initMap() {
+function initMap() {
         var directionsService = new google.maps.DirectionsService;
         var directionsDisplay = new google.maps.DirectionsRenderer;
         var map = new google.maps.Map(document.getElementById('map'), {

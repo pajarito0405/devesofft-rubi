@@ -20,11 +20,7 @@
 <!-- CONTENT -->
 <div class="container">
     <div class="container pagecontainer offset-0">
-
-
         <div class="col-md-8 padding0 ">
-
-
             <div class="tab-content5">
 
                 <!-- TAB 1 -->
@@ -321,17 +317,17 @@
                 <div class="col-xs-6 col-md-6 padding0">
                     <ul class="asientos-estados font_black">
                         <li class="libre">
-                            <img src="../assets/images/nuevo/asiento-libre.png" class="img_indicador">
+                            <img src="../../assets/images/nuevo/asiento-libre.png" class="img_indicador">
                             <br><span class="size10">Libre</span>
                             <div class="line_bus_indicador bgDisponible"></div>
                         </li>
                         <li class="seleccionado">
-                            <img src="../assets/images/nuevo/asiento-seleccionado.png" class="img_indicador">
+                            <img src="../../assets/images/nuevo/asiento-seleccionado.png" class="img_indicador">
                             <br><span class="size10">Reservado</span>
                             <div class="line_bus_indicador bgReservado"></div>
                         </li>
                         <li class="ocupado">
-                            <img src="../assets/images/nuevo/asiento-ocupado.png" class="img_indicador">
+                            <img src="../../assets/images/nuevo/asiento-ocupado.png" class="img_indicador">
                             <br><span class="size10">Ocupado</span>
                             <div class="line_bus_indicador bgOcupado"></div>
                         </li>
@@ -369,7 +365,7 @@
 
                 <div class="col-xs-3 col-md-2 padding5 text-center">
                     <span class="size16 font_black grey">Tipo</span><br>
-                    <img src="../assets/images/nuevo/icon_tipo_asiento-01.svg" class="asiento_dis">
+                    <img src="../../assets/images/nuevo/icon_tipo_asiento-01.svg" class="asiento_dis">
 
                 </div>
                 <div class="col-xs-9 col-md-10 padding5 ">
@@ -403,12 +399,10 @@
             <div class="padding0 bgfix">
                 <div class="row m1">
                     <div class="col-xs-5 col-md-4 padding0">
-                        <!--                        <img src="http://cyjprotec.cl/wp-content/uploads/2016/10/logo3.png" alt="" class="img_logo" />-->
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToHVNK_iosVyl85RuvO-d0p_O7a8b7t6xacjDrKdylGgKT-7aP" alt="" class="img_logo" />
-                        <!--                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXnR-wg5JxNp1Ne9tz4OxLsHy23StWFY66_7Mk8DqxoC9FJqTO" alt="" class="img_logo" />-->
+                        <img src="<?=$detalle_bus[0]->img_principal?>" alt="" class="img_logo" />
                     </div>
                     <div class="col-xs-7 col-md-8 padding0">
-                        <h4 class="m1 block-ellipsis padding5 caps font_black">Linea de Transporte Terrestre Panamericana Pesada aerolina de muslbaidvi CIFA INTERNACIONAL </h4>
+                        <h4 class="m1 block-ellipsis padding5 caps font_black"><?=$detalle_cooperativa[0]->nombre?></h4>
                         <div class="row m1">
                             <div class="hidden-xs col-md-2 padding0">
                             </div>
@@ -1320,7 +1314,7 @@
 
                     <div class="padding5">
                         <div class="col-xs-3 col-md-1 offset-0">
-                            <img src="../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" alt="" class="fwimg" />
+                            <img src="../../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" alt="" class="fwimg" />
                         </div>
                         <div class="col-xs-9 col-md-11 offset-0">
                             <div>
@@ -1381,7 +1375,7 @@
 
                     <div class="padding5">
                         <div class="col-xs-3 col-md-1 offset-0">
-                            <img src="../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" alt="" class="fwimg" />
+                            <img src="../../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" alt="" class="fwimg" />
                         </div>
                         <div class="col-xs-9 col-md-11 offset-0">
                             <div>
@@ -1442,7 +1436,7 @@
 
                     <div class="padding5">
                         <div class="col-xs-3 col-md-1 offset-0">
-                            <img src="../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" alt="" class="fwimg" />
+                            <img src="../../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" alt="" class="fwimg" />
                         </div>
                         <div class="col-xs-9 col-md-11 offset-0">
                             <div>
@@ -1546,7 +1540,7 @@
                 <div class="padding10">
 
                     <div class="wh30percent left">
-                        <img src="../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" width="100" class="fwimg margright20" alt="">
+                        <img src="../../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" width="100" class="fwimg margright20" alt="">
                     </div>
                     <div class="wh60percent right padding10">
                         <span class="size14 dark ">Aquaventure Waterpark and The Lost Chambers Aquarium</span><br>
@@ -1559,7 +1553,7 @@
                 <div class="padding10">
 
                     <div class="wh30percent left">
-                        <img src="../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" width="100" class="fwimg margright20" alt="">
+                        <img src="../../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" width="100" class="fwimg margright20" alt="">
                     </div>
                     <div class="wh60percent right padding10">
                         <span class="size14 dark ">Aquaventure Waterpark and The Lost Chambers Aquarium</span><br>
@@ -1572,7 +1566,7 @@
                 <div class="padding10">
 
                     <div class="wh30percent left">
-                        <img src="../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" width="100" class="fwimg margright20" alt="">
+                        <img src="../../assets/images/nuevo/icon-rubi-serv-equipaje-01.svg" width="100" class="fwimg margright20" alt="">
                     </div>
                     <div class="wh60percent right padding10">
                         <span class="size14 dark ">Aquaventure Waterpark and The Lost Chambers Aquarium</span><br>

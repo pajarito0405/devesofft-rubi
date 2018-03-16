@@ -243,7 +243,7 @@
 
                 <ul class="list-group" id="lista_boletos">
                     <!-- <li class="list-group-item item_cooperativas font_black">
-                        <a href="<?=base_url().'booking/detalle_rutas'?>">
+                        <a href="">
                             <div class="row">
                                 <div class="col-xs-2 col-md-2 text-center padding2">
                                     <div class="listitem2 height_item centrar_verticalmente">
@@ -402,8 +402,11 @@
            // for(i=0; i<data.datos.length; i++){
             $.each(res.datos, function(i,v) { 
                 console.log(v.nombre)
+                var ayuda = v.id_cooperativa;
+                var link = '<?=base_url().'booking/get_data_detalle_bus/'?>';
+                link = link+ v.id_cooperativa
                 item += '<li class="list-group-item item_cooperativas font_black">'+
-                        '<a href="">'+
+                            '<a href="'+link+'">'+
                             '<div class="row">'+
                                 '<div class="col-xs-2 col-md-2 text-center padding2">'+
                                    '<div class="listitem2 height_item centrar_verticalmente">'+
@@ -483,12 +486,10 @@
                                     '</nav>'+
                                 '</div>'+
                                 '<div class="col-xs-3 col-md-2 text-right padding0">'+
-                                    '<form action="details.html">'+
-                                        '<button class="bookbtn mt1 caps font_bold_quantify" type="submit"><span class="icon-icono_bus"></span> Viajar</button>'+
-                                  '</form>'+
+                                        '<button class="bookbtn mt1 caps font_bold_quantify" type="button" id="btn_item" id_item="'+v.id_cooperativa+'" nombre="'+v.nombre+'"><span class="icon-icono_bus"></span> Viajar</button>'+
                                 '</div>'+
                            '</div>'+
-                 '</a>'+
+                        '</a>'+
                    '</li>';
             // }
         });
@@ -502,4 +503,7 @@
      }
  });
 });
+
+
+
 </script>
