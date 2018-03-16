@@ -51,11 +51,6 @@ class booking extends CI_Controller
         $this->load_view_booking("booking/rutas",$web);  
     }
     
-     public function detalle_rutas(){
-        $web['path_id'] = $this->uri->segment(1);
-        $this->load_view_booking("booking/detalle_rutas",$web);  
-    }
-    
     public function get_data_bus(){
         $item = $this->bus->get_item_bus();
         // $ofi = $this->ofi->get_by_id($id);
@@ -69,13 +64,16 @@ class booking extends CI_Controller
         $id = $this->uri->segment(3);
         $item["detalle_bus"] = $this->bus->get_item_detalle_bus($id);
         $item["detalle_cooperativa"] = $this->bus->get_item_detalle_cooperativa($id);
-        
-        //$msg=''; 
-        //$response["detalle_bus"] = array('error_msg'=> $msg,'datos'=>$item);
-        //var_dump($response);
+        $item['path_id'] = $this->uri->segment(1);
         $this->load_view_booking("booking/detalle_rutas",$item);
         //echo json_encode($response); 
     }
+
+    public function detalle_pago(){
+        $web['path_id'] = $this->uri->segment(1);
+        $this->load_view_booking("booking/detalle_pago",$web);  
+    }
+
     
     
     

@@ -15,7 +15,7 @@
 @font-face {
     font-family: 'Walkway';
     font-weight: bold;
-    src: url('../../fonts/walkway/Walkway Bold.ttf');
+    src: url('../../fonts/walkway/Walkway Condensed.ttf');
     /* IE9 Compat Modes */
     src: url('../../fonts/walkway/Walkway Condensed.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../../fonts/walkway/Walkway Condensed.ttf') format('woff2'), /* Super Modern Browsers */
@@ -31,13 +31,32 @@
     src: url('../../fonts/walkway/Walkway Black.ttf');
 
     /* IE9 Compat Modes */
-    src: url('../../fonts/walkway/Walkway Blackd.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    src: url('../../fonts/walkway/Walkway Black.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../../fonts/walkway/Walkway Black.ttf') format('woff2'), /* Super Modern Browsers */
     url('../../fonts/walkway/Walkway Black.ttf') format('woff'), /* Pretty Modern Browsers */
     url('../../fonts/walkway/Walkway Black.ttf') format('truetype');
     /* Safari, Android, iOS */
 }
 
+@font-face {
+    font-family: 'Walkway2';
+    font-weight: bold;
+
+    src: url('../../fonts/walkway/Walkway Bold.ttf');
+
+    /* IE9 Compat Modes */
+    src: url('../../fonts/walkway/Walkway Bold.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../fonts/walkway/Walkway Bold.ttf') format('woff2'), /* Super Modern Browsers */
+    url('../../fonts/walkway/Walkway Bold.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('../../fonts/walkway/Walkway Bold.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+
+
+body {
+    font-family: Walkway2;
+}
 
 
 .font_black {
@@ -48,15 +67,12 @@
 .font_bold {
     font-family: Walkway;
     letter-spacing: 1px;
+    font-weight: 900;
 }
 
 .font_bold_quantify {
     font-family: Quantify;
     letter-spacing: 1px;
-}
-
-body {
-    font-family: Walkway;
 }
 
 
@@ -1205,6 +1221,37 @@ img.imgpos1 {
     background: -ms-linear-gradient(top, #ff6633, #e35121);
     background: -o-linear-gradient(top, #ff6633, #e35121);
 */
+    /* padding: 7.5px 20px; */
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 0.18) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 0.18) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 -1px 0;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: "Quantify";
+    font-weight: 700;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+
+    background: #ed1c24;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.btn-search_pago {
+    /*color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  */
+    text-transform: uppercase;
+    border: 1px solid #ed1c24;
     padding: 7.5px 20px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1217,17 +1264,14 @@ img.imgpos1 {
     font-size: 12px;
     text-decoration: none;
     vertical-align: middle;
-
     font-family: "Quantify";
     font-weight: 700;
-
     -webkit-transition: .3s;
     -moz-transition: .3s;
     transition: .3s;
 
     background: #ed1c24;
     margin-left: 5px;
-    margin-top: 15px;
 }
 
 .btn-search1 {
@@ -1827,6 +1871,10 @@ a:visited.booknow {
     width: 50%;
     float: right;
 }
+.w70percentlast {
+    width: 70%;
+    margin: 0 auto;
+}
 
 .wh33percent {
     width: 33%;
@@ -1902,8 +1950,10 @@ a:visited.booknow {
 
 .tab-content2-home {
     background: #ffffff;
-    padding: 30px 15px 30px 15px;
-    height: 230px;
+    /* padding: 30px 15px 30px 15px;
+    height: 230px; */
+    padding: 15px 5px;
+    height: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -2495,7 +2545,7 @@ a:visited.booknow {
 /*For the wide tabs*/
 
 #air2 {
-    height: 203px;
+    height: 215px;
     overflow-x: hidden;
 }
 
@@ -3720,6 +3770,10 @@ span.cruise-ico {
     margin-left: 25px;
 }
 
+.mleft15{
+    margin-left: 15%;
+}
+
 .slidecouple {
     width: 558px;
     height: 504px;
@@ -3824,6 +3878,7 @@ span.cruise-ico {
 .padding30 {
     padding: 30px;
 }
+
 
 .hpadding30 {
     padding: 0 30px;
@@ -5486,11 +5541,11 @@ input.logpadding {
 .roundstep.active {
     width: 23px;
     height: 23px;
-    background: #72bf66;
+    background: #ed1c24;
     color: #fff;
     border-radius: 23px;
     padding: 1px 0 0 6px;
-    border: 1px solid #72bf66;
+    border: 1px solid #ed1c24;
 }
 
 .roundstep {
@@ -6756,6 +6811,7 @@ a:hover.xnext img {
 
 .form-control {
     font-family: Walkway;
+    padding: 6px;
 }
 
 input#origen,
@@ -7261,6 +7317,11 @@ a:focus {
 .img_indicador {
     position: relative;
     width: 50%;
+}
+
+.width_pago{
+    position: relative;
+    width: 45%;
 }
 
 @media screen and (max-width: 992px) {

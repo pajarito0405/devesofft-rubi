@@ -515,7 +515,9 @@
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-6 padding0 text-center">
-                        <button type="submit" class="btn-search font_bold_quantify">PAGAR</button>
+                        <form action="<?=base_url()?>booking/detalle_pago" >
+                            <button type="submit" class="btn-search font_bold_quantify">PAGAR</button>
+                        </form>
                     </div>
                 </div>
                 <div class="row lbl m5">

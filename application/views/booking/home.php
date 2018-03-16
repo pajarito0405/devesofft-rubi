@@ -111,90 +111,112 @@
 
                     <div class="tab-content2 tab-content2-home" id="myTabContent">
                         <div id="air2" class="tab-pane fade active in">
+                            <div class="row m1 lbl">
+                                <div class="col-xs-12 col-md-4 padding0">
+                                    <div class="row m1 lbl">
+                                        <div class="col-xs-6 col-md-6 hpadding5">
+                                                <span class="font_black size13"><b>Origen</b></span>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Ciudad o terminal de origen" id="origen">
+                                                    <div class="input-group-btn">
+                                                        <button class="btn btn-default btn-direccion red" type="submit">
+                                                            <span class="icon-icon-direccion-01 size20"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    
+                                        <div class="col-xs-6 col-md-6 hpadding5">
+                                                <span class="font_black size13"><b>Destino</b></span>
+                                                <input type="text" class="form-control" placeholder="Ciudad o terminal de destino" id="destino">
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="col-md-4">
-                                <div class="w50percent">
-                                    <div class="wh90percent textleft">
-                                        <span class="font_black size13"><b>Origen</b></span>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Ciudad o terminal de origen" id="origen">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default btn-direccion red" type="submit">
-                                                    <span class="icon-icon-direccion-01 size20">
-                                                    </span>
-                                                  </button>
+                                <div class="col-xs-12 col-md-4 padding0">
+                                    <div class="row m1 lbl">
+                                        <div class="col-xs-6 col-md-6 hpadding5">
+                                        <span class="font_black size13"><b>F. Salida</b></span>
+                                            <div class="input-group">
+                                                <span class="input-group-addon span-fecha"><i class="fal fa-calendar-alt"></i></span>
+                                                <input type="text" class="form-control mySelectCalendar" id="datepicker3" placeholder="mm/dd/yyyy" />
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-xs-6 col-md-6 hpadding5">
+                                        <span class="font_black size13"><b>F. Retorno</b></span>
+                                            <div class="btn-group btn-group-vertical btn-g-check-home" data-toggle="buttons">
+                                                <label class="btn label-check-fecha">
+                                                <input type="checkbox" name='email1'>
+                                                <i class="fa fa-2x fal fa-check-square"></i>
+                                                <i class="fa fa-2x fas fa-check-square"></i> 
+                                                </label>
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon span-fecha"><i class="fal fa-calendar-alt"></i></span>
+                                                <input type="text" class="form-control mySelectCalendar" id="datepicker4" placeholder="mm/dd/yyyy" />
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="w50percentlast">
-                                    <div class="wh90percent textleft right">
-                                        <span class="font_black size13"><b>Destino</b></span>
-                                        <input type="text" class="form-control" placeholder="Ciudad o terminal de destino" id="destino">
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="col-md-4">
-                                <div class="w50percent">
-                                    <div class="wh90percent textleft">
-                                        <span class="font_black size13"><b>F. Salida</b></span>
-                                        <div class="input-group">
-                                            <span class="input-group-addon span-fecha"><i class="fal fa-calendar-alt"></i></span>
-                                            <input type="text" class="form-control mySelectCalendar" id="datepicker3" placeholder="mm/dd/yyyy" />
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="w50percentlast">
-                                    <div class="wh90percent textleft right">
-                                        <span class="font_black size13"><b>F. Retorno</b></span>
-                                        <div class="btn-group btn-group-vertical btn-g-check-home" data-toggle="buttons">
-                                            <label class="btn label-check-fecha">
-                                              <input type="checkbox" name='email1'>
-                                              <i class="fa fa-2x fal fa-check-square"></i>
-                                              <i class="fa fa-2x fas fa-check-square"></i> 
-                                            </label>
-                                        </div>
-                                        <div class="input-group">
-                                            <span class="input-group-addon span-fecha"><i class="fal fa-calendar-alt"></i></span>
-                                            <input type="text" class="form-control mySelectCalendar" id="datepicker4" placeholder="mm/dd/yyyy" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="room1">
-                                    <div class="w50percent">
+                                    <!-- <div class="w50percent">
                                         <div class="wh90percent textleft">
-                                            <span class="font_black size13"><b>Pasajeros</b></span>
-                                            <input type="text" class="form-control mySelectCalendar" placeholder="Adultos">
+                                            <span class="font_black size13"><b>F. Salida</b></span>
+                                            <div class="input-group">
+                                                <span class="input-group-addon span-fecha"><i class="fal fa-calendar-alt"></i></span>
+                                                <input type="text" class="form-control mySelectCalendar" id="datepicker3" placeholder="mm/dd/yyyy" />
+                                            </div>
+
                                         </div>
                                     </div>
 
                                     <div class="w50percentlast">
-                                        <div class="wh90percent right">
-                                            <div class="w50percent ">
-                                                <!--                                                <div class="wh90percent right">-->
-                                                <div class="radio radio-danger font_black">
-                                                    <input type="radio" name="radio1" id="radio1" value="option1" checked="">
-                                                    <label for="radio1">
-                                                        Escalas&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </div>
-                                                <div class="radio radio-danger font_black">
-                                                    <input type="radio" name="radio1" id="radio2" value="option2">
-                                                    <label for="radio2">
-                                                        Express&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </div>
+                                        <div class="wh90percent textleft right">
+                                            <span class="font_black size13"><b>F. Retorno</b></span>
+                                            <div class="btn-group btn-group-vertical btn-g-check-home" data-toggle="buttons">
+                                                <label class="btn label-check-fecha">
+                                                <input type="checkbox" name='email1'>
+                                                <i class="fa fa-2x fal fa-check-square"></i>
+                                                <i class="fa fa-2x fas fa-check-square"></i> 
+                                                </label>
                                             </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon span-fecha"><i class="fal fa-calendar-alt"></i></span>
+                                                <input type="text" class="form-control mySelectCalendar" id="datepicker4" placeholder="mm/dd/yyyy" />
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
 
-                                            <div class="w50percent">
-                                                <button type="submit" class="btn-search font_bold_quantify">Viajar</button>
+                                <div class="col-xs-12 col-md-4 padding0">
+                                <div class="row m1 lbl">
+                                        <div class="col-xs-6 col-md-5 hpadding5">
+                                        <span class="font_black size13"><b>Pasajeros</b></span>
+                                                <input type="text" class="form-control mySelectCalendar" placeholder="Adultos">
+                                        </div>
+                                    
+                                        <div class="col-xs-6 col-md-7 hpadding5">
+                                            <div class="row m1 lbl">
+                                                <div class="col-xs-6 col-md-6 hpadding5">
+                                                    <div class="radio radio-danger font_black">
+                                                        <input type="radio" name="radio1" id="radio1" value="option1" checked="">
+                                                        <label for="radio1">
+                                                            Escalas&nbsp;&nbsp;&nbsp;
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio radio-danger font_black">
+                                                        <input type="radio" name="radio1" id="radio2" value="option2">
+                                                        <label for="radio2">
+                                                            Express&nbsp;&nbsp;&nbsp;
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 col-md-6 padding0 text-right">
+                                                    <form action="<?=base_url().'booking/rutas'?>">
+                                                        <button type="submit" class="btn-search font_bold_quantify">Viajar</button>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -316,8 +338,8 @@
                             </li>
                         </ul>
                         <div class="clearfix"></div>
-                        <a id="prev_btn" class="prev" href="#"><img src="images/spacer.png" alt=""/></a>
-                        <a id="next_btn" class="next" href="#"><img src="images/spacer.png" alt=""/></a>
+                        <a id="prev_btn" class="prev" href="#"><img src="<?=base_url();?>assets/images/spacer.png" alt=""/></a>
+                        <a id="next_btn" class="next" href="#"><img src="<?=base_url();?>assets/images/spacer.png" alt=""/></a>
                     </div>
                 </div>
             </div>

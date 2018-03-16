@@ -8,13 +8,13 @@
     <div class="container">
         <footer>
             <div class="footer">
-                <a href="#" class="social1b"><img src="assets/images/icon-facebook.png" alt=""/></a>
-                <a href="#" class="social2b"><img src="assets/images/icon-twitter.png" alt=""/></a>
-                <a href="#" class="social3b"><img src="assets/images/icon-gplus.png" alt=""/></a>
-                <a href="#" class="social4b"><img src="assets/images/icon-youtube.png" alt=""/></a>
+                <a href="#" class="social1b"><img src="<?=base_url();?>assets/images/icon-facebook.png" alt=""/></a>
+                <a href="#" class="social2b"><img src="<?=base_url();?>assets/images/icon-twitter.png" alt=""/></a>
+                <a href="#" class="social3b"><img src="<?=base_url();?>assets/images/icon-gplus.png" alt=""/></a>
+                <a href="#" class="social4b"><img src="<?=base_url();?>assets/images/icon-youtube.png" alt=""/></a>
                 <br/><br/> Copyright &copy; 2013 <a href="#" class="font_black">Travel Agency</a> All rights reserved. <a href="http://titanicthemes.com" class="font_black">TitanicThemes.com</a>
                 <br/><br/>
-                <a href="#top" id="gotop2" class="gotop"><img src="images/spacer.png" alt=""/></a>
+                <a href="#top" id="gotop2" class="gotop"><img src="<?=base_url();?>assets/images/spacer.png" alt=""/></a>
             </div>
         </footer>
     </div>
@@ -26,12 +26,12 @@
         <div class="col-md-3">
             <span class="ftitleblack font_black">Lets socialize</span>
             <div class="scont">
-                <a href="#" class="social1b"><img src="../assets/images/icon-facebook.png" alt=""/></a>
-                <a href="#" class="social2b"><img src="../assets/images/icon-twitter.png" alt=""/></a>
-                <a href="#" class="social3b"><img src="../assets/images/icon-gplus.png" alt=""/></a>
-                <a href="#" class="social4b"><img src="../assets/images/icon-youtube.png" alt=""/></a>
+                <a href="#" class="social1b"><img src="<?=base_url();?>assets/images/icon-facebook.png" alt=""/></a>
+                <a href="#" class="social2b"><img src="<?=base_url();?>assets/images/icon-twitter.png" alt=""/></a>
+                <a href="#" class="social3b"><img src="<?=base_url();?>assets/images/icon-gplus.png" alt=""/></a>
+                <a href="#" class="social4b"><img src="<?=base_url();?>assets/images/icon-youtube.png" alt=""/></a>
                 <br/><br/><br/>
-                <a href="#"><img src="../assets/images/logosmal2.png" alt="" /></a><br/>
+                <a href="#"><img src="<?=base_url();?>assets/images/logosmal2.png" alt="" /></a><br/>
                 <span class="grey2">&copy; 2013  |  <a href="#" class="font_black">Privacy Policy</a><br/>
 					All Rights Reserved </span>
                 <br/><br/>
@@ -72,7 +72,7 @@
             <span class="ftitleblack font_black">Newsletter</span>
             <div class="relative">
                 <input type="email" class="form-control fccustom2black" id="exampleInputEmail1" placeholder="Enter email">
-                <button type="submit" class="btn btn-default btncustom">Submit<img src="../assets/images/arrow.png" alt=""/></button>
+                <button type="submit" class="btn btn-default btncustom">Submit<img src="<?=base_url();?>assets/images/arrow.png" alt=""/></button>
             </div>
             <br/><br/>
             <span class="ftitleblack font_black">Customer support</span><br/>
@@ -91,7 +91,7 @@
         <a href="#">Special offers</a> |
         <a href="#">Blog</a> |
         <a href="#">Contact</a>
-        <a href="#top" class="gotop scroll"><img src="../assets/images/spacer.png" alt=""/></a>
+        <a href="#top" class="gotop scroll"><img src="<?=base_url();?>assets/images/spacer.png" alt=""/></a>
     </div>
 </div>
 

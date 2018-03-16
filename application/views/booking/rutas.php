@@ -154,7 +154,7 @@
 
             <div class="padding20title text-center hidden-xs">
                 <div class="content_filtro text-center">
-                    <img src="../assets/images/nuevo/icono_bus.svg" alt="" class="img_filtro img_h3_inline_block" />
+                    <img src="<?=base_url();?>assets/images/nuevo/icono_bus.svg" alt="" class="img_filtro img_h3_inline_block" />
                     <h3 class="font_black img_h3_inline_block h3_filtro font_black"> Filtros Avanzados</h3>
                 </div>
 
@@ -406,7 +406,7 @@
                 var link = '<?=base_url().'booking/get_data_detalle_bus/'?>';
                 link = link+ v.id_cooperativa
                 item += '<li class="list-group-item item_cooperativas font_black">'+
-                            '<a href="'+link+'">'+
+                            // '<a href="'+link+'">'+
                             '<div class="row">'+
                                 '<div class="col-xs-2 col-md-2 text-center padding2">'+
                                    '<div class="listitem2 height_item centrar_verticalmente">'+
@@ -486,10 +486,10 @@
                                     '</nav>'+
                                 '</div>'+
                                 '<div class="col-xs-3 col-md-2 text-right padding0">'+
-                                        '<button class="bookbtn mt1 caps font_bold_quantify" type="button" id="btn_item" id_item="'+v.id_cooperativa+'" nombre="'+v.nombre+'"><span class="icon-icono_bus"></span> Viajar</button>'+
+                                        '<a href="'+link+'"><button class="bookbtn mt1 caps font_bold_quantify" type="button" id="btn_item" id_item="'+v.id_cooperativa+'" nombre="'+v.nombre+'"><span class="icon-icono_bus"></span> Viajar</button></a>'+
                                 '</div>'+
                            '</div>'+
-                        '</a>'+
+                        // '</a>'+
                    '</li>';
             // }
         });
