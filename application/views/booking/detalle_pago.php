@@ -28,126 +28,238 @@
 				<div class="padding10 grey">
 					<!-- <span class="size16px bold dark left">Who's traveling? </span> -->
 					<div class="bgrtg text-center padding10"><span class="white">Aun no estas REGISTRADO</span></div>
+					<br/>
 					<!-- <div class="clearfix"></div>
 					<div class="line4"></div> -->
-					Please tell us who will be checking in. Must be 18 or older. <br/><br/>
+					<!-- Please tell us who will be checking in. Must be 18 or older. <br/><br/> -->
                     
                     <div class="row m1 lbl">
-                        <span class="size16px bold dark left">Datos del viajero </span>
+                        <span class="size16px font_black dark left">Datos del viajero </span>
                         <div class="roundstep active right">1</div>
                         <div class="clearfix"></div>
+						<div class="line4"></div>
                     </div>
                     <div class="row m1 lbl">
                         <div class="col-xs-6 col-md-6 text-center padding0">
-                            <span class="size12 img_h3_inline_block width_pago">CI/RUC/Pasaporte</span>
+                            <span class="size12 img_h3_inline_block width_pago font_black">CI/RUC/Pasaporte</span>
                             <input type="text" class="form-control img_h3_inline_block width_pago" placeholder="XXXXXXXXXX">
                         </div>
                         <div class="col-xs-6 col-md-6 text-center padding0">
-                            <button class="btn-search_pago ">Validar</button>
+                            <button class="btn-search_pago font_bold_quantify">Validar</button>
                         </div>
                     </div>
+					<div class="clearfix"></div>
+					<br>
+					<!-- <div class="line4"></div> -->
                     <div class="row m1 lbl">
                         <div class="col-xs-6 col-md-6 padding0">
-                            <span class="size12 mleft15">Nombres</span>
+                            <span class="size12 mleft15 font_black">Nombres</span>
                             <input type="text" class="form-control w70percentlast" placeholder="">
                         </div>
                         <div class="col-xs-6 col-md-6 padding0">
-                        <span class="size12 mleft15">Apellidos</span>
+                        <span class="size12 mleft15 font_black">Apellidos</span>
                             <input type="text" class="form-control w70percentlast" placeholder="">
                         </div>
                     </div>
-
-
-
-
-
-
-					<div class="col-md-4 textright">
-						<div class="margtop15"><span class="dark">Contact Name:</span><span class="red">*</span></div>
-					</div>
-					<div class="col-md-4">
-						<span class="size12">First and Last Name*</span>
-						<input type="text" class="form-control " placeholder="">
-					</div>
-					<div class="col-md-4 textleft margtop15">
-					</div>
+					<div class="row m1 lbl">
+                        <div class="col-xs-6 col-md-6 padding0">
+                            <span class="size12 mleft15 font_black">E-Mail</span>
+                            <input type="email" class="form-control w70percentlast" placeholder="">
+                        </div>
+                        <div class="col-xs-6 col-md-6 padding0">
+                        <span class="size12 mleft15 font_black">Número Celular</span>
+                            <input type="tel" class="form-control w70percentlast" placeholder="">
+                        </div>
+                    </div>
+					<div class="row m1 lbl">
+                        <div class="col-xs-6 col-md-6 padding0">
+                            <span class="size12 mleft15 font_black">Políticas de Privacidad</span>
+							<br>
+                            <div class="btn-group btn-group-vertical mleft15" data-toggle="buttons">
+								<label class="btn label-check-fecha">
+								<input type="checkbox" name='email1'>
+								<i class="fa fa-2x fal fa-check-square"></i>
+								<i class="fa fa-2x fas fa-check-square"></i> 
+								</label>
+							</div>
+                        </div>
+                        <div class="col-xs-6 col-md-6 padding0">
+							<div class="row m1 lbl">
+								<div class="col-xs-6 col-md-6 padding0">
+									<span class="size12 mleft15 font_black">Verificar Código</span>
+									<input type="text" class="form-control w70percentlast" placeholder="">
+								</div>
+								<div class="col-xs-6 col-md-6 padding0" style="padding-top: 20px !important;">
+									<button class="btn-search_pago font_bold_quantify">Validar</button>
+								</div>
+							</div>
+					                        	
+                        </div>
+                    </div>
 					<div class="clearfix"></div>
-					
-					<br/>
-					<div class="col-md-4 textright">
-						<div class="margtop7"><span class="dark">Phone Number:</span><span class="red">*</span></div>
-					</div>
-					<div class="col-md-4">
-						<span class="size12">Country code*</span>						
-						<select class="form-control mySelectBoxClass">
-						  <option selected>xxx-xxx-xxx-772</option>
-						  <option>xxx-xxx-xxx-039</option>
-						</select>
-					</div>
-					<div class="col-md-4 textleft">
-						<span class="size12">Preferred Phone Number*</span>	
-						<input type="text" class="form-control" placeholder="">
-					</div>
-					<div class="clearfix"></div>
+					<div class="line4"></div>
 
 					<br/>
-					<div class="col-md-4">
-					</div>
-					<div class="col-md-8 textleft">
-						Bedding / Smoking Request (optional)
-						<!-- Collapse 3 -->	
-						<button type="button" class="collapsebtn3 collapsed mt-5" data-toggle="collapse" data-target="#collapse3"></button>
-						<div id="collapse3" class="collapse">
-							<textarea rows="3" class="form-control margtop10"></textarea>
-						</div>
-						<!-- End of collapse 3 -->
-						<div class="clearfix"></div>				
-
-						Special Requests (optional)		
-						<!-- Collapse 4 -->	
-						<button type="button" class="collapsebtn3 collapsed mt-5" data-toggle="collapse" data-target="#collapse4"></button>
-						<div id="collapse4" class="collapse">
-							<textarea rows="3" class="form-control margtop10"></textarea>
-						</div>
-						<!-- End of collapse 4 -->
-						<div class="clearfix"></div>	
-						
-					</div>
-					<div class="clearfix"></div>
-					
-					
 					<br/>
-					<br/>
-					<span class="size16px bold dark left">How would you like to pay?</span>
+					<span class="size16px font_black dark left">Datos usuarios</span>
 					<div class="roundstep right">2</div>
 					<div class="clearfix"></div>
-					<div class="line4"></div>		
-				
-					
-					
-					<br/>
-					<div class="col-md-4">
-					</div>
-					<div class="col-md-4">
-						Enter a coupon code
-						<!-- Collapse 5 -->	
-						<button type="button" class="collapsebtn3 collapsed mt-5" data-toggle="collapse" data-target="#collapse5"></button>
-						<div id="collapse5" class="collapse">
-							<input type="text" class="form-control margtop10" placeholder="">
+					<div class="line4"></div>	
+
+					<div class="lista">
+						<div class="row m1 lbl">
+							<div class="col-xs-3 col-md-3 padding0">
+								<span class="font_black ">Pasajero 1</span>
+								
+							</div>
+							<div class="col-xs-9 col-md-9 padding0">
+								<div class="line2"></div>	
+							</div>
 						</div>
-						<!-- End of collapse 5 -->
+						<div class="row m1 lbl">
+							<div class="col-xs-3 col-md-2 padding0">
+								<img src="<?=base_url()?>/assets/images/nuevo/bus-front.png" class="boleto_pago" alt="">							
+							</div>
+							<div class="col-xs-9 col-md-10 padding0">
+								<div class="row m1 lbl">
+									<div class="col-xs-6 col-md-4 padding5">
+										<span class="size12 font_black">Tipo Documento</span>
+										<select class="form-control mySelectBoxClass font_black">
+											<option selected>Cédula</option>
+											<option>Pasaporte</option>
+											<option>CI</option>
+										</select>
+										
+									</div>
+									<div class="col-xs-6 col-md-4 padding5">
+										<span class="size12 font_black">Número Documento</span>
+										<input type="number" class="form-control" placeholder="">
+										
+									</div>
+									<div class="col-xs-6 col-md-4 padding5">
+										<div class="radio radio-danger font_black w70percentlast margexteriores">
+											<input type="radio" name="radio1" id="radio1" value="option1" checked="" >
+											<label for="radio1">
+												Masculino&nbsp;&nbsp;&nbsp;
+											</label>
+										</div>
+										<div class="w70percentlast radio radio-danger font_black margexteriores">
+											<input type="radio" name="radio1" id="radio2" value="option2">
+											<label for="radio2">
+												Famenino&nbsp;&nbsp;&nbsp;
+											</label>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-xs-6 col-md-3 padding5">
+										<span class="size12 font_black">Nombre</span>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="col-xs-6 col-md-3 padding5">
+										<span class="size12 font_black">Apellido</span>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="col-xs-6 col-md-3 padding5">
+										<span class="size12 font_black">Edad</span>
+										<input type="number" class="form-control" placeholder="">
+									</div>
+									<div class="col-xs-6 col-md-3 padding5">
+										<span class="size12 font_black">Asiento</span>
+										<select class="form-control mySelectBoxClass font_black">
+											<option selected>B-1</option>
+											<option>B-2</option>
+											<option>B-3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="clearfix"></div>
+						<div class="line4"></div>
 					</div>
-					<div class="col-md-4 textleft">
-					</div>
-					<div class="clearfix"></div>
 					
+					<div class="lista">
+						<div class="row m1 lbl">
+							<div class="col-xs-3 col-md-3 padding0">
+								<span class="font_black ">Pasajero 2</span>
+								
+							</div>
+							<div class="col-xs-9 col-md-9 padding0">
+								<div class="line2"></div>	
+							</div>
+						</div>
+						<div class="row m1 lbl">
+							<div class="col-xs-3 col-md-2 padding0">
+								<img src="<?=base_url()?>/assets/images/nuevo/bus-front.png" class="boleto_pago" alt="">							
+							</div>
+							<div class="col-xs-9 col-md-10 padding0">
+								<div class="row m1 lbl">
+									<div class="col-xs-6 col-md-4 padding5">
+										<span class="size12 font_black">Tipo Documento</span>
+										<select class="form-control mySelectBoxClass font_black">
+											<option selected>Cédula</option>
+											<option>Pasaporte</option>
+											<option>CI</option>
+										</select>
+										
+									</div>
+									<div class="col-xs-6 col-md-4 padding5">
+										<span class="size12 font_black">Número Documento</span>
+										<input type="number" class="form-control" placeholder="">
+										
+									</div>
+									<div class="col-xs-6 col-md-4 padding5">
+										<div class="radio radio-danger font_black w70percentlast margexteriores">
+											<input type="radio" name="radio1a" id="radio1a" value="option1a" checked="" >
+											<label for="radio1a">
+												Masculino&nbsp;&nbsp;&nbsp;
+											</label>
+										</div>
+										<div class="w70percentlast radio radio-danger font_black margexteriores">
+											<input type="radio" name="radio1a" id="radio2a" value="option2a">
+											<label for="radio2a">
+												Famenino&nbsp;&nbsp;&nbsp;
+											</label>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-xs-6 col-md-3 padding5">
+										<span class="size12 font_black">Nombre</span>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="col-xs-6 col-md-3 padding5">
+										<span class="size12 font_black">Apellido</span>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="col-xs-6 col-md-3 padding5">
+										<span class="size12 font_black">Edad</span>
+										<input type="number" class="form-control" placeholder="">
+									</div>
+									<div class="col-xs-6 col-md-3 padding5">
+										<span class="size12 font_black">Asiento</span>
+										<select class="form-control mySelectBoxClass font_black">
+											<option selected>B-1</option>
+											<option>B-2</option>
+											<option>B-3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="line4"></div>
+					</div>
+					<br/>
+					<br/>
+					<span class="size16px font_black dark left">Formas de Pago</span>
+					<div class="roundstep right">3</div>
+					<div class="line4"></div>
 
 					<br/>
 					<!-- Nav tabs -->
-					<ul class="nav navigation-tabs">
-					  <li class="active"><a href="#card" data-toggle="tab">Credit/Debit card</a></li>
-					  <li><a href="#paypal" data-toggle="tab">Paypal</a></li>
+					<ul class="nav navigation-tabs forma_pago_ul font_black">
+					  <li class="active "><a href="#card" data-toggle="tab"><i class="fal fa-info-circle"></i> Tarjeta de Credito</a></li>
+					  <li><a href="#paypal" data-toggle="tab"><i class="fal fa-calculator"></i> Otras Formas de Pago</a></li>
 					</ul>
 
 					<!-- Tab panes -->
@@ -156,7 +268,7 @@
 					  <!-- Tab 1 -->
 					  <div class="tab-pane active" id="card">
 					  
-							<div class="col-md-4 textright">
+							<!-- <div class="col-md-4 textright">
 								<div class="margtop15"><span class="dark">Debit/Credit Card Number:</span><span class="red">*</span></div>
 							</div>
 							<div class="col-md-4">
@@ -164,10 +276,98 @@
 							</div>
 							<div class="col-md-4 textleft">
 							</div>
-							<div class="clearfix"></div>
+							<div class="clearfix"></div> -->
+							<div class="row m1 lbl">
+								<div class="col-xs-12 col-md-4 padding5">
+									<span class="font_black">País</span>
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<div class="col-xs-12 col-md-8 padding5">
+									<div class="row m1 lbl">
+										<div class="wh19percent img_h3_inline_block padding0">
+											<div class="radio text-center radio-danger font_black radio_trajetas">
+												<input type="radio" name="radioTerjeta" id="radioTerjeta1" value="radioTerjeta1">
+												<label for="radioTerjeta1">
+													Diners Club
+												</label>
+												<img src="<?=base_url()?>/assets/images/nuevo/asiento-seleccionado.png" alt="" class="tarjetas_check">
+											</div>
+										</div>
+										<div class="wh19percent img_h3_inline_block padding0">
+											<div class="radio text-center radio-danger font_black radio_trajetas">
+												<input type="radio" name="radioTerjeta" id="radioTerjeta2" value="radioTerjeta2" checked>
+												<label for="radioTerjeta2">
+													Mastercard
+												</label>
+												<img src="<?=base_url()?>/assets/images/nuevo/asiento-seleccionado.png" alt="" class="tarjetas_check">
+											</div>
+										</div>
+										<div class="wh19percent img_h3_inline_block padding0">
+											<div class="radio text-center radio-danger font_black radio_trajetas">
+												<input type="radio" name="radioTerjeta" id="radioTerjeta3" value="radioTerjeta3">
+												<label for="radioTerjeta3">
+													pacificar
+												</label>
+												<img src="<?=base_url()?>/assets/images/nuevo/asiento-seleccionado.png" alt="" class="tarjetas_check">
+											</div>
+										</div>
+										<div class="wh19percent img_h3_inline_block padding0">
+											<div class="radio text-center radio-danger font_black radio_trajetas">
+												<input type="radio" name="radioTerjeta" id="radioTerjeta4" value="radioTerjeta4">
+												<label for="radioTerjeta4">
+													Express
+												</label>
+												<img src="<?=base_url()?>/assets/images/nuevo/asiento-seleccionado.png" alt="" class="tarjetas_check">
+											</div>
+										</div>
+										<div class="wh19percent img_h3_inline_block padding0">
+											<div class="radio text-center radio-danger font_black radio_trajetas">
+												<input type="radio" name="radioTerjeta" id="radioTerjeta5" value="radioTerjeta5">
+												<label for="radioTerjeta5">
+													Express
+												</label>
+												<img src="<?=base_url()?>/assets/images/nuevo/asiento-seleccionado.png" alt="" class="tarjetas_check">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-md-3 padding5">
+									<span class="font_black"># Tarjeta</span>
+									<input type="text" class="form-control" placeholder="">	
+								</div>
+								<div class="col-xs-6 col-md-3 padding5">
+									<span class="font_black">Mes</span>
+                                    <input type="text" class="form-control"  placeholder="" />
+								</div>
+								<div class="col-xs-6 col-md-3 padding5">
+								<span class="font_black">Año</span>
+									<input type="text" class="form-control" placeholder="" />	
+								</div>
+								<div class="col-xs-6 col-md-3 padding5">
+									<span class="font_black">CSC</span>
+									<input type="text" class="form-control" placeholder="">
+									<a href="#"><span class="font_black size11 red">¿Qué es esto?</span></a>
+								</div>
+								<div class="col-xs-6 col-md-3 padding5">
+									<span class="font_black">Nombre</span>
+									<input type="text" class="form-control" placeholder="">	
+								</div>
+								<div class="col-xs-6 col-md-3 padding5">
+									<span class="font_black">Apellido</span>
+									<input type="text" class="form-control" placeholder="">	
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-xs-12 col-md-12 padding5 text-right">
+									<span class="font_black">Pago verificado por </span>
+									<img src="<?=base_url()?>/assets/images/nuevo/icono_marcopolo-10.png" class="logo_kusqui" alt="">
+								</div>
+							</div>
 							
-							<br/>
-							<div class="col-md-4 textright">
+
+
+
+							
+							<!-- <div class="col-md-4 textright">
 								<div class="margtop7"><span class="dark">Card Type:</span><span class="red">*</span></div>
 							</div>
 							<div class="col-md-4">
@@ -222,12 +422,12 @@
 										  <option>26</option>
 										</select>						
 									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="col-md-4 textleft">
-							</div>
-							<div class="clearfix"></div>
+								</div> -->
+								<!-- <div class="clearfix"></div>
+							</div> -->
+							<!-- <div class="col-md-4 textleft">
+							</div> -->
+							<!-- <div class="clearfix"></div>
 							
 
 							<br/>
@@ -261,7 +461,7 @@
 							</div>
 							<div class="col-md-4 textleft margtop15">(as it appears on the card)
 							</div>
-							<div class="clearfix"></div>
+							<div class="clearfix"></div> -->
 					  
 					  </div>
 					  <!-- End of Tab 1 -->					  
@@ -281,7 +481,7 @@
 					</div>
 
 					
-					<br/>
+					<!-- <br/>
 					<br/>
 					<span class="size16px bold dark left">Where should we send your confirmation?</span>
 					<div class="roundstep right">3</div>
@@ -298,10 +498,8 @@
 					</div>
 					<div class="col-md-4 textleft">
 					</div>
-					<div class="clearfix"></div>
+					<div class="clearfix"></div> -->
 					
-					<br/>
-					<br/>
 					<span class="size16px bold dark left">Review and book your trip</span>
 					<div class="roundstep right">4</div>
 					<div class="clearfix"></div>
@@ -314,7 +512,7 @@
 					By selecting to complete this booking I acknowledge that I have read and accept the <a href="#" class="orange">rules & 
 					restrictions</a> <a href="#" class="orange">terms & conditions</a> , and <a href="#" class="orange">privacy policy</a>.	<br/>		
 					
-					<button type="submit" class="btn-search4 margtop20">Complete booking</button>	
+					<button type="submit" class="btn-search1 margtop20 font_bold_quantify">$ 18 PAGAR</button>	
 					
 			
 				</div>

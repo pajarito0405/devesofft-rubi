@@ -252,9 +252,9 @@
                     <div class="list_carousel">
                         <ul id="foo">
                             <li>
-                                <img src="assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
+                                <img src="<?=base_url();?>assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
                                 <div class="m1">
-                                    <a href=""><img src="assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
+                                    <a href=""><img src="<?=base_url();?>assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
                                     <div class="row ">
                                         <div class="col-xs-8 col-md-8 div-viajes">
                                             <span class="font-size-ahorra font_bold">Viajes a</span><br> <span class="font-size-viajes font_black">Atacames</span>
@@ -266,10 +266,10 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
+                                <img src=<?=base_url();?>assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
 
                                 <div class="m1">
-                                    <a href=""><img src="assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
+                                    <a href=""><img src="<?=base_url();?>assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
                                     <div class="row ">
                                         <div class="col-xs-8 col-md-8 div-viajes">
                                             <span class="font-size-ahorra font_bold">Viajes a</span><br> <span class="font-size-viajes font_black">Ibarra</span>
@@ -281,9 +281,9 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
+                                <img src="<?=base_url();?>assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
                                 <div class="m1">
-                                    <a href=""><img src="assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
+                                    <a href=""><img src="<?=base_url();?>assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
                                     <div class="row ">
                                         <div class="col-xs-8 col-md-8 div-viajes">
                                             <span class="font-size-ahorra font_bold">Viajes a</span><br> <span class="font-size-viajes font_black">Latacunga</span>
@@ -295,9 +295,9 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
+                                <img src="<?=base_url();?>assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
                                 <div class="m1">
-                                    <a href=""><img src="assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
+                                    <a href=""><img src="<?=base_url();?>assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
                                     <div class="row ">
                                         <div class="col-xs-8 col-md-8 div-viajes">
                                             <span class="font-size-ahorra font_bold">Viajes a</span><br> <span class="font-size-viajes font_black">Riobamba</span>
@@ -309,9 +309,9 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
+                                <img src="<?=base_url();?>assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
                                 <div class="m1">
-                                    <a href=""><img src="assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
+                                    <a href=""><img src="<?=base_url();?>assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
                                     <div class="row ">
                                         <div class="col-xs-8 col-md-8 div-viajes">
                                             <span class="font-size-ahorra font_bold">Viajes a</span><br> <span class="font-size-viajes font_black">Ambato</span>
@@ -323,9 +323,9 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
+                                <img src="<?=base_url();?>assets/images/nuevo/ofertas_imagen1.jpg" alt="" />
                                 <div class="m1">
-                                    <a href=""><img src="assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
+                                    <a href=""><img src="<?=base_url();?>assets/images/nuevo/icono_bus.svg" class="ver-mas"></a>
                                     <div class="row ">
                                         <div class="col-xs-8 col-md-8 div-viajes">
                                             <span class="font-size-ahorra font_bold">Viajes a</span><br> <span class="font-size-viajes font_black">Zamora Chinchipe Pastaza</span>
